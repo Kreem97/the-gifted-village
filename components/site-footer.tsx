@@ -23,6 +23,7 @@ const footerLinks = [
   { href: '/about', label: 'About' },
   { href: '/programs', label: 'Programs' },
   { href: '/quiz', label: 'Gifted Quiz' },
+  { href: '/village-market', label: 'Village Marketplace' },
   { href: '/contact', label: 'Contact' },
 ]
 

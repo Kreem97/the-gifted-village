@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import { Check } from 'lucide-react'
 import { CtaButton } from '@/components/cta-button'
-import { PathwaysGrid } from '@/components/pathways-grid'
+import { VillagePathwaysGrid } from '@/components/village-pathways-grid'
 import { Testimonials } from '@/components/testimonials'
 import { EmailSignup } from '@/components/email-signup'
 
 const partners = [
-  'Sage Defense Systems',
-  'Plant Klub',
-  'Krown Level Enterprises',
-  'Botanically Yours',
-  'Sow Society',
+  { name: 'Sage Defense Systems', image: '/images/partners/sage-defense.png' },
+  { name: 'Plant Klub', image: '/images/partners/plant-klub.png' },
+  { name: 'Krown Level Enterprises', image: '/images/partners/krown-level.png' },
+  { name: 'Emotionally Yours by Pamela LLC', image: '/images/partners/emotionally-yours.png' },
+  { name: 'Sow Society', image: '/images/partners/sow-society.png' },
 ]
 
 export default function HomePage() {
@@ -19,13 +19,13 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
         <Image
-          src="/images/hero-learners.png"
-          alt="Curious children collaborating and creating together"
+          src="/images/header.jpg"
+          alt="Empty classroom ready for learners"
           fill
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-forest/80" aria-hidden="true" />
+        <div className="absolute inset-0 bg-forest/45" aria-hidden="true" />
         <div className="relative mx-auto flex max-w-4xl flex-col items-center px-5 py-24 text-center text-forest-foreground md:py-32">
           <p className="mb-4 font-serif italic text-gold">
             Where Brilliant Minds Grow Together
@@ -101,18 +101,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Program Pathways */}
+      {/* Village Pathways */}
       <section className="bg-background">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-20">
           <h2 className="text-center font-serif text-3xl font-semibold text-forest md:text-4xl">
-            Program Pathways
+            Village Pathways
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
             Choose your path in the village. Each space is designed to help
             gifts grow in community.
           </p>
           <div className="mt-14">
-            <PathwaysGrid />
+            <VillagePathwaysGrid />
           </div>
         </div>
       </section>
@@ -142,8 +142,8 @@ export default function HomePage() {
           <div className="order-2 md:order-1">
             <div className="relative mx-auto aspect-4/3 w-full max-w-md overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/free-guide.png"
-                alt="Free printable gifted learner activity guide"
+                src="/images/worksheets-preview.png"
+                alt="Preview of the free gifted learner quiz and Hidden Strengths Discovery Sheet"
                 fill
                 className="object-cover"
               />
@@ -230,16 +230,19 @@ export default function HomePage() {
           <p className="text-center font-serif text-xl italic text-muted-foreground">
             Special Thanks to Our Partners
           </p>
-          <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+          <div className="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-x-14 gap-y-10">
             {partners.map((p) => (
-              <li
-                key={p}
-                className="font-serif text-lg font-semibold text-forest/70"
-              >
-                {p}
-              </li>
+              <div key={p.name} className="relative h-28 w-40">
+                <Image
+                  src={p.image}
+                  alt={p.name}
+                  fill
+                  sizes="160px"
+                  className="object-contain"
+                />
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
     </>

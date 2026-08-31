@@ -1,22 +1,23 @@
-import { School, BookOpen, Flower2, Users, ShoppingCart } from 'lucide-react'
-import type { ProgramIcon as IconName } from '@/lib/programs'
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
-const map = {
-  school: School,
-  book: BookOpen,
-  flower: Flower2,
-  users: Users,
-  cart: ShoppingCart,
-}
-
 export function ProgramIcon({
-  icon,
+  image,
+  alt,
   className,
 }: {
-  icon: IconName
+  image: string
+  alt: string
   className?: string
 }) {
-  const Icon = map[icon]
-  return <Icon className={cn('size-8', className)} aria-hidden="true" />
+  return (
+    <span
+      className={cn(
+        'relative block size-20 shrink-0 overflow-hidden rounded-full ring-1 ring-forest/10',
+        className,
+      )}
+    >
+      <Image src={image} alt={alt} fill sizes="80px" className="object-cover" />
+    </span>
+  )
 }

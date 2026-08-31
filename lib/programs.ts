@@ -1,15 +1,8 @@
-export type ProgramIcon =
-  | 'school'
-  | 'book'
-  | 'flower'
-  | 'users'
-  | 'cart'
-
 export type Program = {
   slug: string
   name: string
   tag: string
-  icon: ProgramIcon
+  image: string
   short: string
   cta: string
   comingSoon?: boolean
@@ -21,53 +14,64 @@ export const programs: Program[] = [
     slug: 'learning-lodge',
     name: 'Learning Lodge',
     tag: 'Online Classes',
-    icon: 'school',
+    image: '/programs/learning-lodge.png',
     short:
-      'Structured, engaging virtual classes that stretch thinking and deepen understanding.',
-    cta: 'Enroll Now',
+      'Enrichment classes and academic adventures that go beyond the classroom.',
+    cta: 'Join the Waitlist',
     comingSoon: true,
     href: '/programs/learning-lodge',
   },
   {
     slug: 'story-circle',
     name: 'Story Circle',
-    tag: 'Workshops & Read-Alouds',
-    icon: 'book',
+    tag: 'Free Video Library',
+    image: '/programs/story-circle.png',
     short:
-      'Interactive literacy experiences that build identity, voice, and imagination.',
-    cta: 'Reserve Your Spot',
+      'Stories that inspire. Voices that lead. Creative storytelling, writing, and speaking experiences.',
+    cta: 'Watch Now',
     href: '/programs/story-circle',
   },
   {
     slug: 'curriculum-garden',
     name: 'Curriculum Garden',
-    tag: 'Resources',
-    icon: 'flower',
+    tag: 'Free & Paid Resources',
+    image: '/programs/curriculum-garden.png',
     short:
-      'Ready-to-use lessons, stations, and tools for parents and educators.',
+      'Resources for parents, teachers, and homeschoolers to nurture gifted learners.',
     cta: 'Browse Resources',
     href: '/programs/curriculum-garden',
   },
   {
-    slug: 'community-partners',
-    name: 'Community Partners',
-    tag: 'Services',
-    icon: 'users',
+    slug: 'agri-steam',
+    name: 'Agri-STEAM',
+    tag: 'Hands-On Learning',
+    image: '/programs/agri-steam.png',
     short:
-      'Workshops, PD, and collaborative programming for schools and organizations.',
+      'Grow. Explore. Innovate. Hands-on agriculture, science, and sustainability experiences.',
     cta: 'Book a Consultation',
-    href: '/programs/community-partners',
+    href: '/programs/agri-steam',
   },
   {
-    slug: 'village-market',
-    name: 'Village Market',
-    tag: 'Shop',
-    icon: 'cart',
+    slug: 'executive-function',
+    name: 'Executive Function',
+    tag: 'Skills for Success',
+    image: '/programs/executive-function.png',
     short:
-      'Educational tools and culturally meaningful merchandise for curious minds.',
-    cta: 'Shop Now',
+      'Skills for success. Tools for life. Practical strategies that build focus, organization, and self-advocacy.',
+    cta: 'Join the Waitlist',
     comingSoon: true,
-    href: '/programs/village-market',
+    href: '/programs/executive-function',
+  },
+  {
+    slug: 'growing-gifted-minds',
+    name: 'Growing Gifted Minds',
+    tag: 'Parent Workshops & Support',
+    image: '/programs/growing-gifted-minds.png',
+    short:
+      'Workshops & parent support. Empowering families with knowledge, strategies, and community.',
+    cta: 'Join the Waitlist',
+    comingSoon: true,
+    href: '/programs/growing-gifted-minds',
   },
 ]
 
