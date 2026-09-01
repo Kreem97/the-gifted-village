@@ -1,8 +1,18 @@
+import {
+  BookOpen,
+  Brain,
+  GraduationCap,
+  Leaf,
+  Sprout,
+  Users,
+  type LucideIcon,
+} from 'lucide-react'
+
 export type Program = {
   slug: string
   name: string
   tag: string
-  image: string
+  icon: LucideIcon
   short: string
   cta: string
   comingSoon?: boolean
@@ -14,7 +24,7 @@ export const programs: Program[] = [
     slug: 'learning-lodge',
     name: 'Learning Lodge',
     tag: 'Online Classes',
-    image: '/programs/learning-lodge.png',
+    icon: GraduationCap,
     short:
       'Enrichment classes and academic adventures that go beyond the classroom.',
     cta: 'Join the Waitlist',
@@ -25,7 +35,7 @@ export const programs: Program[] = [
     slug: 'story-circle',
     name: 'Story Circle',
     tag: 'Free Video Library',
-    image: '/programs/story-circle.png',
+    icon: BookOpen,
     short:
       'Stories that inspire. Voices that lead. Creative storytelling, writing, and speaking experiences.',
     cta: 'Watch Now',
@@ -35,7 +45,7 @@ export const programs: Program[] = [
     slug: 'curriculum-garden',
     name: 'Curriculum Garden',
     tag: 'Free & Paid Resources',
-    image: '/programs/curriculum-garden.png',
+    icon: Sprout,
     short:
       'Resources for parents, teachers, and homeschoolers to nurture gifted learners.',
     cta: 'Browse Resources',
@@ -45,7 +55,7 @@ export const programs: Program[] = [
     slug: 'agri-steam',
     name: 'Agri-STEAM',
     tag: 'Hands-On Learning',
-    image: '/programs/agri-steam.png',
+    icon: Leaf,
     short:
       'Grow. Explore. Innovate. Hands-on agriculture, science, and sustainability experiences.',
     cta: 'Book a Consultation',
@@ -55,7 +65,7 @@ export const programs: Program[] = [
     slug: 'executive-function',
     name: 'Executive Function',
     tag: 'Skills for Success',
-    image: '/programs/executive-function.png',
+    icon: Brain,
     short:
       'Skills for success. Tools for life. Practical strategies that build focus, organization, and self-advocacy.',
     cta: 'Join the Waitlist',
@@ -66,7 +76,7 @@ export const programs: Program[] = [
     slug: 'growing-gifted-minds',
     name: 'Growing Gifted Minds',
     tag: 'Parent Workshops & Support',
-    image: '/programs/growing-gifted-minds.png',
+    icon: Users,
     short:
       'Workshops & parent support. Empowering families with knowledge, strategies, and community.',
     cta: 'Join the Waitlist',

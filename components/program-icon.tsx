@@ -1,23 +1,25 @@
-import Image from 'next/image'
+import type { LucideIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function ProgramIcon({
-  image,
+  icon: Icon,
   alt,
   className,
 }: {
-  image: string
+  icon: LucideIcon
   alt: string
   className?: string
 }) {
   return (
     <span
+      role="img"
+      aria-label={alt}
       className={cn(
-        'relative block size-20 shrink-0 overflow-hidden rounded-full ring-1 ring-forest/10',
+        'flex size-20 shrink-0 items-center justify-center rounded-full bg-forest text-cream ring-1 ring-forest/10',
         className,
       )}
     >
-      <Image src={image} alt={alt} fill sizes="80px" className="object-cover" />
+      <Icon className="h-1/2 w-1/2" strokeWidth={1.75} aria-hidden="true" />
     </span>
   )
 }

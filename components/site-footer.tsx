@@ -4,13 +4,13 @@ import { Logo } from '@/components/logo'
 const socials = [
   {
     label: 'Facebook',
-    href: 'https://facebook.com',
+    href: 'https://www.facebook.com/profile.php?id=100069526172975',
     path: 'M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z',
   },
   {
-    label: 'Twitter',
-    href: 'https://twitter.com',
-    path: 'M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1 2h7.1l4.9 6.4L18.9 2Zm-1.2 18h1.9L6.4 4H4.4l13.3 16Z',
+    label: 'YouTube',
+    href: 'https://youtube.com',
+    path: 'M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.5 15.5v-7l6.5 3.5-6.5 3.5Z',
   },
   {
     label: 'Instagram',

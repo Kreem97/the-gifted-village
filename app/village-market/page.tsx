@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 }
 
 const comingSoon = [
-  'Monthly affirmation calendars',
-  'Postcards & stationery',
   "Children's books",
   'Digital downloads & unit studies',
 ]

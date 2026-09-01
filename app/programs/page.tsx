@@ -30,7 +30,7 @@ export default function ProgramsPage() {
                 className="flex flex-col rounded-2xl border border-border bg-card p-7 transition-shadow hover:shadow-lg"
               >
                 <div className="flex items-center justify-between">
-                  <ProgramIcon image={p.image} alt={p.name} className="size-14" />
+                  <ProgramIcon icon={p.icon} alt={p.name} className="size-14" />
                   {p.comingSoon && (
                     <span className="rounded-full bg-gold/25 px-3 py-1 text-xs font-semibold tracking-wide text-forest uppercase">
                       Coming Soon

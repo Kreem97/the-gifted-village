@@ -12,7 +12,7 @@ export function ProgramsGrid() {
             className="group flex flex-col items-center text-center"
           >
             <span className="transition-transform group-hover:scale-105">
-              <ProgramIcon image={p.image} alt={p.name} />
+              <ProgramIcon icon={p.icon} alt={p.name} />
             </span>
             <span className="mt-4 font-serif text-lg font-semibold text-forest">
               {p.name}
